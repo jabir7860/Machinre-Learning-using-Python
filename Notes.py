@@ -1,32 +1,10 @@
-#Module 1 Introduction and Regression. 
-#Module 2 Classification 
-#Module 3 Culstering
-#Module 4 Final Project 
-################################################################################################################## 
-#Machine Learning Algorithms 
-""" Regression : 1) Simple Linear Regression 2) Multiple Linear regression 3)Regression Trees 
-    Classification : 1) Logistic Regression 2) KNN 3) SVM 4) Multiclass Prediction 5)Decision Trees
-    Clustering : 1)K - means
-""" 
+import numpy as np  #Mathematical Caluculations
+import matplotlib.pyplot as mtp #2D Plotting of Data. Data Visulization 
+import pandas as pd #Importing and Managing Datasets.
 
-"""
-    Example : Prime,Netflix Sujjestions,Bank Loan,Prediction.
-"""
-####################################################################################################################
-"""
-            MAJOR MACHINE LEARNING TECHNIQUES 
-1.REGRESSION / ESTIMATION : a) Predicting Continuous Values.  ex:CO2 emmission from vehicales 
-2.Classification : a)Predication item/Categroy. ex:cancer/not a cancer.
-3.Clustering : Finding structures of data. #Grouping Similar Data sets ex:similar patients/customers.
-4.Associatinos : Co-Occuring 
-5.anomaly detection : credicat card frad 
-6.squence mining : next recommendation on YT.
-7. Dimensioin Reduction : Reducing the size of data. 
-8.Recommendation systems : Recommendtion of itenms.
+data_set=pd.read_csv("C:/Users/JABIR/OneDrive/Desktop/Datasets.csv") #Reading of Data From .csv File and Stored in Variable data_set.
+print(data_set) #prints dataset
 
-"""
-######################################################################################################################
-DEEPLEARNING IS A SUBSET OF MACHINE LEARNING
-######################################################################################################################
-
-
+data_set.head() #prints the first 5 rows of the dataset.
+data_set.shape #print No of Rows and Columns. 
+data_set.drop(['Unnamed: 4'], axis=1) #Drop the Column Named "Unnamed:4" From the Dataset. 
